@@ -85,14 +85,14 @@ extension PhoneVerificationController {
 			field.delegate = self
 		}
 
-		// strings
-		phoneSendButton.setTitle(L10n.Button.send, for: .normal)
-		phoneCancelButton.setTitle(L10n.Button.cancel, for: .normal)
-		codeSendButton.setTitle(L10n.Button.verify, for: .normal)
-		codeTryAgainButton.setTitle(L10n.Button.tryAgain, for: .normal)
-		phoneDescriptionLabel.text = L10n.Description.phone
-		codeDescriptionLabel.text = L10n.Description.code
-		phoneNumberField.placeholder = L10n.Placeholder.phone
+		// strings/
+		phoneSendButton.setTitle("Отправить", for: .normal)
+		phoneCancelButton.setTitle("Отмена", for: .normal)
+		codeSendButton.setTitle("Проверить код", for: .normal)
+		codeTryAgainButton.setTitle("Повторить заново", for: .normal)
+		phoneDescriptionLabel.text = "Для авторизации через номер телефона введите номер телефона"
+		codeDescriptionLabel.text = "Введите КОД из СМС"
+		phoneNumberField.placeholder = "шаблон"
 
 		// apply configuration
 		apply(configuration: configuration)
